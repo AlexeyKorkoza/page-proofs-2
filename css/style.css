@@ -12,6 +12,25 @@ html {
     margin-bottom: 40px;
 }
 
+.about-us-left,
+.about-us-right,
+.food-content-left,
+.food-content-right,
+.choose-us-left,
+.choose-us-center,
+.clients-content-left,
+.clients-content-center,
+.choose-us-right,
+.clients-content-right {
+    float: left;
+}
+
+.about-us-content,
+.choose-us-content,
+.clients-content {
+    padding-top: 150px;
+}
+
 h1,
 h3 {
     margin: 0;
@@ -93,13 +112,7 @@ header {
 
 .about-us {
     overflow: hidden;
-}
-
-.about-us-content,
-.food-content,
-.choose-us-content,
-.clients-content {
-    padding-top: 150px;
+    padding-bottom: 130px;
 }
 
 .about-us-left p,
@@ -107,6 +120,11 @@ header {
     font: 10pt "OpenSansRegular";
     color: #5f5e4e;
     text-align: left;
+    width: 80%;
+}
+
+.about-us-right p {
+    font: 12pt "OpenSansRegular";
 }
 
 .about-us-left p:nth-child(1),
@@ -123,17 +141,9 @@ header {
     width: 42%;
 }
 
-.about-us-left,
-.about-us-right,
-.food-content-left,
-.food-content-right,
-.choose-us-left,
-.choose-us-center,
-.clients-content-left,
-.clients-content-center,
-.choose-us-right,
-.clients-content-right {
-    float: left;
+.about-us-left img,
+.about-us-right img {
+    width: 100%;
 }
 
 .about-us-right img,
@@ -143,7 +153,10 @@ header {
 
 .food {
     background: url(../img/image1.png) no-repeat;
+    background-size: cover;
+    padding-bottom: 158px;
     overflow: hidden;
+    padding-top: 130px;
 }
 
 .food-content-left {
@@ -356,13 +369,19 @@ footer .socials {
 
 @media (max-width: 768px) {
 
+    .header-content,
+    .about-us-content,
+    .food-content,
+    .choose-us-content,
+    .clients-content,
+    .footer-content {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
     .header-content {
         display: block;
     }
-
-    .logo {
-        margin-left: 50px;
-        }
 
     #nav-icon {
         display: block;
@@ -439,7 +458,6 @@ footer .socials {
     }
 
     .menu {
-
         float: left;
         width: 100%;
     }
@@ -448,6 +466,16 @@ footer .socials {
         display: block;
         text-align: left;
         margin-left: 25px;
+    }
+
+    .about-us-left,
+    .about-us-right {
+        width: 100%;
+    }
+
+    .food-content-left,
+    .food-content-right {
+        width: 100%;
     }
 }
 
