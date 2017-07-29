@@ -117,14 +117,10 @@ header {
 
 .about-us-left p,
 .about-us-right p {
-    font: 10pt "OpenSansRegular";
+    font: 12pt "OpenSansRegular";
     color: #5f5e4e;
     text-align: left;
-    width: 80%;
-}
-
-.about-us-right p {
-    font: 12pt "OpenSansRegular";
+    width: 85%;
 }
 
 .about-us-left p:nth-child(1),
@@ -141,14 +137,14 @@ header {
     width: 42%;
 }
 
-.about-us-left img,
-.about-us-right img {
-    width: 100%;
+.about-us-left .about-us-left-image img,
+.about-us-right .about-us-right-image img {
+    margin-top: 30px;
 }
 
-.about-us-right img,
-.about-us-left img {
-    margin-top: 30px;
+.about-us-right-image,
+.about-us-left-image {
+    overflow: hidden;
 }
 
 .food {
@@ -473,6 +469,11 @@ footer .socials {
         width: 100%;
     }
 
+    .about-us-left .about-us-left-image img,
+    .about-us-right .about-us-right-image img {
+        width: 100%;
+    }
+
     .food-content-left,
     .food-content-right {
         width: 100%;
@@ -489,6 +490,11 @@ footer .socials {
     .footer-content {
         padding-right: 30px;
         padding-left: 30px;
+    }
+
+    .about-us-left,
+    .about-us-right {
+        width: 100%;
     }
 }
 
